@@ -1,0 +1,142 @@
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: #1d1e20;
+    display: flex;
+    justify-content: space-between;
+    /* Quarante uma distancia entre os itens*/
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    font-size: 1.6rem;
+    margin-right: 2.5rem;
+}
+
+.menu li a:hover {
+    color: red;
+    border-bottom: 2px solid rgb(123, 212, 123);
+    font-weight: 500;
+}
+
+
+/* section */
+
+.label {
+    margin-top: 2rem;
+}
+
+.flex {
+    display: flex;
+    /* indica que o flex pode quebrar */
+    height: 80vh;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    /* Quando passo o max windth ele centralizar a div flex */
+    margin: 0 auto;
+}
+
+.flex .araeDigitacao {
+    /* Base de 200px */
+    flex: 1;
+    flex-direction: row;
+    margin: 10px 5px;
+    margin-bottom: 2rem;
+    padding: 15px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 6px 0px #000000;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.araeDigitacao p {
+    font-size: 2.4rem;
+    line-height: 5rem;
+    color: #1b42ee;
+}
+
+
+/*
+.areaResultado { 
+    flex: 1;
+    margin: 10px 5px;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 1px 1px 6px 0px #000000;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.areaResultado p {
+    margin-top: 10px;
+}
+
+input {
+    width: 250px;
+    padding: 15px 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 0px #000000;
+}
+*/
+
+button {
+    background: #1b42ee;
+    background-image: linear-gradient(to bottom, #1b42ee, #041979);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    width: 195px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    box-shadow: 1px 1px 6px 0px #000000;
+    text-shadow: 1px 1px 6px #000000;
+    border: solid #041979 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    border: solid #1b42ee 1px;
+    background: #041979;
+    background-image: linear-gradient(to bottom, #041979, #1b42ee);
+    border-radius: 20px;
+    text-decoration: none;
+}
